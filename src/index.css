@@ -2,17 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+html {
   scroll-behavior: smooth;
 }
 
-.logo{
-  filter: grayscale(100%) brightness(0) invert(1)
+.logo {
+  filter: grayscale(100%) brightness(0) invert(1);
 }
 
-.headline-1{
+.headline-1 { 
   @apply max-w-max;
-  background: -webkit-linear-gradient(0deg, #ffffff, #777778 );
+  background: -webkit-linear-gradient(0deg, #ffffff, #6c6b6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content{
+  flex-grow: 1;
+  /* padding-top: 7rem; */
+}
+
