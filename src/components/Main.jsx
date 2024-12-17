@@ -16,7 +16,7 @@ const Main = () => {
           </h1>
         </div>
         <form action='' className='relative z-10 grid gap-7 px-4 w-full md:pt-0 pt-32' onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}>
+            onBlur={() => setIsFocused(false)}> 
           <input
             type='text'
             placeholder='eg. Onion'
